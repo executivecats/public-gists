@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+html {
+  font-size: 12pt;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+}
+body {
+  padding: 1em;
+  margin: 0 auto;
+}
+code,
+pre,
+blockquote {
+  padding: .2em;
+  background: rgba(0,0,0,.1);
+}
+code,
+pre {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 .5em 0;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+[class*=float-] {
+  margin: 0 auto 1em auto;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  clear: both;
+}
+@media (min-width: 600px) {
+  h1 { font-size: 300%; }
+  h2 { font-size: 200%; }
+  h3 { font-size: 180%; }
+  h4 { font-size: 160%; }
+  h5 { font-size: 140%; }
+  h6 { font-size: 120%; }
+  [class*=float-] {
+    max-width: 20%;
+  }
+  .float-left {
+    float: left;
+    margin: 0 1em .5em 0;
+  }
+  .float-right {
+    float: right;
+    margin: 0 0 .5em 1em;
+  }
+}
+.button {
+    background-color: #002ab0; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+/* Center tables for demo */
+table {
+  margin: 0 auto;
+}
+
+/* Default Table Style */
+table {
+  color: #333;
+  background: white;
+  border: 1px solid grey;
+  font-size: 12pt;
+  border-collapse: collapse;
+}
+table thead th,
+table tfoot th {
+  color: #777;
+  background: rgba(0,0,0,.1);
+}
+table caption {
+  padding:.5em;
+}
+table th,
+table td {
+  padding: .5em;
+  border: 1px solid lightgrey;
+}
+/* Zebra Table Style */
+[data-table-theme*=zebra] tbody tr:nth-of-type(odd) {
+  background: rgba(0,0,0,.05);
+}
+[data-table-theme*=zebra][data-table-theme*=dark] tbody tr:nth-of-type(odd) {
+  background: rgba(255,255,255,.05);
+}
+/* Dark Style */
+[data-table-theme*=dark] {
+  color: #ddd;
+  background: #333;
+  font-size: 12pt;
+  border-collapse: collapse;
+}
+[data-table-theme*=dark] thead th,
+[data-table-theme*=dark] tfoot th {
+  color: #aaa;
+  background: rgba(0255,255,255,.15);
+}
+[data-table-theme*=dark] caption {
+  padding:.5em;
+}
+[data-table-theme*=dark] th,
+[data-table-theme*=dark] td {
+  padding: .5em;
+  border: 1px solid grey;
+}
